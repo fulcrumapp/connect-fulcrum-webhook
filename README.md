@@ -12,7 +12,7 @@ This middleware lets you add multiple fulcrum-webhook-processing hooks into your
 
 Use in any connect-powered node web framework, like Express in the example below.
 
-```
+```javascript
 var express = require('express');
 var fulcrumMiddleware = require('connect-fulcrum-webhook');
 
