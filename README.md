@@ -67,7 +67,7 @@ var recordConfig = {
 };
 app.use('/fulcrum', fulcrumMiddleware(recordConfig));
 
-//Process forms
+// Process forms
 function formProcessor (payload) {
   doFormProcessingStuff(payload, done);
 }
