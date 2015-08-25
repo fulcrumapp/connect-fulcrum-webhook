@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JasonSanford/connect-fulcrum-webhook.git"
+    "url": "https://github.com/fulcrumapp/connect-fulcrum-webhook.git"
   },
   "keywords": [
     "fulcrum",
@@ -18,9 +18,9 @@
   "author": "Jason Sanford",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JasonSanford/connect-fulcrum-webhook/issues"
+    "url": "https://github.com/fulcrumapp/connect-fulcrum-webhook/issues"
   },
-  "homepage": "https://github.com/JasonSanford/connect-fulcrum-webhook",
+  "homepage": "https://github.com/fulcrumapp/connect-fulcrum-webhook",
   "dependencies": {
     "raw-body": "^2.1.2"
   }
