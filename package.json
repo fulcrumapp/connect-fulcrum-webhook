@@ -1,6 +1,6 @@
 {
   "name": "connect-fulcrum-webhook",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A connect middleware for processing Fulcrum webhook payloads",
   "main": "index.js",
   "scripts": {
