@@ -1,0 +1,27 @@
+{
+  "name": "connect-fulcrum-webhook",
+  "version": "0.0.0",
+  "description": "A connect middleware for processing Fulcrum webhook payloads",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JasonSanford/connect-fulcrum-webhook.git"
+  },
+  "keywords": [
+    "fulcrum",
+    "webhook",
+    "middleware"
+  ],
+  "author": "Jason Sanford",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JasonSanford/connect-fulcrum-webhook/issues"
+  },
+  "homepage": "https://github.com/JasonSanford/connect-fulcrum-webhook",
+  "dependencies": {
+    "raw-body": "^2.1.2"
+  }
+}
