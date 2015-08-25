@@ -10,7 +10,7 @@ This middleware lets you add multiple fulcrum-webhook-processing hooks into your
 
 ## Usage
 
-Use in any connect-powered node web framework, like Express in the example below.
+Use in any connect-powered node web framework. The example below uses express and simulates sending a text message when a record is created or updated.
 
 ```javascript
 var express = require('express');
@@ -47,5 +47,37 @@ app.use('/fulcrum', fulcrumMiddleware(fulcrumMiddlewareConfig));
 app.listen(5000, function () {
   console.log('Listening on port 5000');
 });
+```
 
+This example shows how you might perform several different actions based on what type of webhook was received, record or form changes in this case.
+
+```javascript
+var express = require('express');
+var fulcrumMiddleware = require('connect-fulcrum-webhook');
+
+var app = express();
+
+// Process records
+function recordProcessor (payload) {
+  doRecordProcessingStuff(payload, done);
+}
+var recordConfig = {
+  actions: ['record.create', 'record.update', 'record.delete'],
+  processor: recordProcessor
+};
+app.use('/fulcrum', fulcrumMiddleware(recordConfig));
+
+//Process forms
+function formProcessor (payload) {
+  doFormProcessingStuff(payload, done);
+}
+var formConfig = {
+  actions: ['form.create', 'form.update', 'form.delete'],
+  processor: formProcessor
+};
+app.use('/fulcrum', fulcrumMiddleware(formConfig));
+
+app.listen(5000, function () {
+  console.log('Listening on port 5000');
+});
 ```
