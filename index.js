@@ -2,7 +2,7 @@ function getRequestBody (req, callback) {
   if (req.body) {
     // Lots of apps use body-parser, so just use that if
     // the request has already been inflated.
-    callback(req.body);
+    callback(null, req.body);
   } else {
     // Require this module just-in-time in the case
     // we don't need it at all.
