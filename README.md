@@ -1,5 +1,7 @@
 # connect-fulcrum-webhook
 
+![npm version](https://img.shields.io/npm/v/connect-fulcrum-webhook.svg)
+
 A connect middleware for processing [Fulcrum webhook](http://fulcrumapp.com/developers/overview/webhooks/) payloads.
 
 This middleware lets you add multiple fulcrum-webhook-processing hooks into your connect-powered (Express) web framework. It removes boilerplate code to listen for POST requests with specific payload data (`record.create`, `form.update`, etc.) and lets you focus on simply processing the payload with whatever business logic you need.
